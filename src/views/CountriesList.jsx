@@ -10,7 +10,7 @@ class CountriesList extends Component {
           <ul>
             {list.map((country) => {
               return (
-                <li>
+                <li key={country.cca3}>
                   <Link to={country.cca3}>{country.name.common}</Link>
                 </li>
               );
